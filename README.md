@@ -53,7 +53,7 @@ from datasets import load_dataset
 dataset = load_dataset("thesven/SyntheticMedicalQA-4336")
 dataset = dataset.rename_column("question", "input_text")
 dataset = dataset.rename_column("response", "output_text")
-split_dataset = dataset["train"].train_test_split(test_size=0.3)
+split_dataset = dataset["train"].train_test_split(test_size=0.2)
 ```
 
 ### **2. Initialize Tokenizer & Quantized Model**
